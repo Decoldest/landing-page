@@ -8,14 +8,19 @@ body {
   flex-direction: column;
 }
 
-.header, .image-section, .information, .quote-section, .quote-container, .sign-up, .footer, .image-description,
-.card-container, .card, .sign-up, .banner {
+.header, .image-section, .information, .quote-section, .quote-container, .sign-up, .header-right,
+.header-left, .footer, .image-description, .card-container, .card, .sign-up, .banner {
   display: flex;
 }
 
 .information{
-  padding: 4% 0%;
+  padding: 6% 0%;
   background-color: #f76c6c;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  font-family: Assistant, sans-serif;
+  color: rgb(235, 226, 209);
 }
 
 .header {
@@ -23,10 +28,10 @@ body {
   color: white;
   justify-content: space-between;
   padding: 2% 15%;
+  font-family: 'Barlow', sans-serif;
 }
 
 .header-right {
-  display: flex;
   justify-content: space-evenly;
   gap: 20px;
   align-items: center;
@@ -40,8 +45,7 @@ body {
   justify-content: center;
   background-color: #a8d0e6;
   color: white;
-  padding: 2% 0%;
-  gap: 2%;
+  padding: 5% 0%;
 }
 
 .image-description {
@@ -49,70 +53,153 @@ body {
   justify-content: center;
   max-width: 40%;
   flex: 1;
-  gap: 2%;
+  gap: 4%;
+  font-family: Manrope, Arial, sans-serif;
 }
 
-#shrek {
+#ducky {
   width: 400px;
   height: auto;
 }
+
+#script {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+}
+
+#script-header {
+  font-family: 'Bitter', serif;  
+  font-size: 32px;
+}
+
 #bee-button {
-  color: white;
-  background-color: cornflowerblue;
   width: 200px;
   height: 100;
-  padding: 10px;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.information {
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
+#bee-button:hover {
+  background-color: #fff;
 }
 
+#bee-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  #bee-button{
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+ 
 .card-container {
   width: 600px;
   justify-content: space-around;
+  gap: 5%;
 }
 
 .card {
   flex-direction: column;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   color: white;
 }
+
 .quote-section, .sign-up {
   background-color: #faf6d5;
   justify-content: center;
-  padding: 5% 0%;
+  padding: 3.5% 0%;
 }
 
 .quote-container {
   flex-direction: column;
   flex: 1;
   max-width: 50%;
+  color: rgb(92, 101, 110);
 }
 
-p {
+#quote {
+  font-size: 18px;
+  font-family: 'Eczar', serif;
   align-self: flex-start;
 }
 
-h4 {
+#bee {
   margin: 0px;
   padding: 0px;
   align-self: flex-end;
 }
 
-
 .banner{
   justify-content: space-between;
-  background: mediumslateblue;
-  border-radius: 5px;
+  align-items: center;
+  background: #5c7ee6;
+  border-radius: 40px;
   box-shadow: 2px 4px 4px rgba(0,0,0,.2);
-  padding: 20px;
-  width: 250px;
+  padding: 20px 40px;
+  width: 350px;
+  color: white;
+  gap: 5%;
+}
+
+.banner, #bee-button {
+  font-family: Oxygen, sans-serif;
+}
+
+#sign-up-button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #6d6d76;
+  height: 40px;
+  width: 100px;
+  overflow: hidden;
+  padding: 0px 16px;
+  position: relative;
+  transition: box-shadow .15s,transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+#sign-up-button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+#sign-up-button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#sign-up-button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }
 
 .footer {
@@ -121,4 +208,5 @@ h4 {
   color: white;
   padding: 15px 0px;
   font-size: 16px;
+  font-family: 'Barlow', sans-serif;
 }
