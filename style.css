@@ -1,0 +1,71 @@
+.sections {
+  display:flex;
+  flex-direction: column;
+}
+
+.header, .image-section, .information, .quote-container, .sign-up, .footer, .image-description,
+.card-container, .card {
+  display: flex;
+}
+
+.header {
+  background-color: #1F2937;
+  color: white;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-left {
+  font-size: 24px;
+}
+
+.image-section {
+  justify-content: center;
+  background-color: #1F2937;
+  color: white;
+}
+
+.image-description {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+}
+
+#shrek {
+  width: 400px;
+  height: auto;
+}
+#bee-button {
+  color: white;
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 100;
+  padding: 10px;
+}
+
+.information {
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.card-container {
+  width: 600px;
+  justify-content: space-around;
+}
+
+.card {
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
