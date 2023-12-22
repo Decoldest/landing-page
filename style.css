@@ -13,12 +13,13 @@ body {
   display: flex;
 }
 
-.information, .quote-section, .sign-up{
-  margin: 4% 0%;
+.information{
+  padding: 4% 0%;
+  background-color: #f76c6c;
 }
 
 .header {
-  background-color: #1F2937;
+  background-color: #a8d0e6;
   color: white;
   justify-content: space-between;
   padding: 2% 15%;
@@ -37,7 +38,7 @@ body {
 
 .image-section {
   justify-content: center;
-  background-color: #1F2937;
+  background-color: #a8d0e6;
   color: white;
   padding: 2% 0%;
   gap: 2%;
@@ -47,7 +48,8 @@ body {
   flex-direction: column;
   justify-content: center;
   max-width: 40%;
-  flex: auto;
+  flex: 1;
+  gap: 2%;
 }
 
 #shrek {
@@ -81,11 +83,10 @@ a {
   text-decoration: none;
   color: white;
 }
-.quote-section {
-  background-color: #E5E7EB;
+.quote-section, .sign-up {
+  background-color: #faf6d5;
   justify-content: center;
-  margin: 25px 0px;
-  padding: 25px 0px;
+  padding: 5% 0%;
 }
 
 .quote-container {
@@ -104,10 +105,6 @@ h4 {
   align-self: flex-end;
 }
 
-.sign-up {
-  justify-content: center;
-  margin: 25px;
-}
 
 .banner{
   justify-content: space-between;
@@ -119,8 +116,9 @@ h4 {
 }
 
 .footer {
-  background-color: #1F2937;
+  background-color: #a8d0e6;
   justify-content: center;
   color: white;
   padding: 15px 0px;
+  font-size: 16px;
 }
